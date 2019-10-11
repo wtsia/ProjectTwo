@@ -7,6 +7,7 @@ header {
     padding: 30px;
 }
 h1, h2 {
+    font-family: 'Poppins', sans-serif;
     color: white;
     margin: 5px;
     margin-right: 10px;
@@ -21,17 +22,20 @@ img {
 }
 body {
     background-color: rgb(61, 55, 55);
-    color: black;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     margin: 0;
 }
 
-#icon {
+#heart {
     display: inline-block;
     height: 45px;
     width: 45px;
     opacity: 0.7; 
+}
+
+#heart:hover, #heart:active {
+    opacity: 1; 
 }
 
 #edit {
@@ -40,13 +44,15 @@ body {
 }
 
 nav {
-    background-color: gray;
-    color: black;
+    color: white;
+    background: black;
     display: flex;
 }
 
 .navigation {
     padding: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .navigation:hover {
     background: rgb(145, 136, 145);
@@ -59,6 +65,13 @@ nav {
     display: flex;
     flex-direction: column-reverse;   
 }
+
+.icon {
+    color: black;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px 5px 10px;
+}
 p {
     margin: 5px;
     font-size: 17px;
@@ -66,12 +79,12 @@ p {
 }
 
 a:link, a:visited {
-    color: black;
     text-decoration: none;
 }
 
 li {
     list-style-type: none;
+    font-family: 'Poppins', sans-serif;
     background: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 10px;
@@ -79,6 +92,3 @@ li {
     color: black;
 }
 
-#icon:hover, #icon:active {
-    opacity: 1; 
-}

@@ -4,10 +4,10 @@
         {{myInstance.name}}<p>{{myInstance.description}}</p>
         <img src="{{myInstance.url}}">
         <div>
-          <img id="icon" src="https://photos.smugmug.com/Hearticon/i-mSFVxPg/0/e0bfcea1/S/heart-icon-transparent-background-7-S.png" onclick="this.src=`https://photos.smugmug.com/Hearticon/i-ZC7QQ3V/0/42e0aad7/S/heart-icon-transparent-background-7red-S.png`">
+          <img id="heart" src="https://photos.smugmug.com/Hearticon/i-mSFVxPg/0/e0bfcea1/S/heart-icon-transparent-background-7-S.png" onclick="this.src=`https://photos.smugmug.com/Hearticon/i-ZC7QQ3V/0/42e0aad7/S/heart-icon-transparent-background-7red-S.png`">
         </div>
         <form action="/edit/{{ myInstance.id }}">
-            <input type="submit" value="Edit" />
+            <input type="submit" value="Edit" class="icon"/>
         </form>
       </li>
   {{/each}}

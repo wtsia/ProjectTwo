@@ -13,17 +13,17 @@
       <input type="text" value="{{ myInstances.url }}" name="url"/>
     </p>
     <p>
-        <label>Change description: </label>
+        <label>Change Description: </label>
         <input type="text" value="{{ myInstances.description }}" name="description"/>
     </p>
     <p>
-        <label>Change topic: </label>
+        <label>Change Topic: </label>
         <input type="text" value="{{ myInstances.topic }}" name="topic"/>
     </p>
-    <input type="submit" value="Update" />
+    <input type="submit" value="Update" class="icon"/>
   </form>
 
   <form action="/{{myInstance.id}}?_method=delete" method="post">
-    <input type="submit" value="Delete">
+    <input type="submit" value="Delete" class="icon">
   </form>
 </div>
