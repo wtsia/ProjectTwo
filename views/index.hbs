@@ -1,13 +1,14 @@
-{{#each myInstances as |myInstance|}}
-    <li>
-      {{myInstance.name}}<p>{{myInstance.description}}</p>
-      <img src="{{myInstance.url}}">
-      <div>
-        <img id="icon" src="data:image/png;base64,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">
-        {{myInstance.hearts}}
-      </div>
-      <div>
-          comment
-      </div>
-    </li>
-{{/each}}
+<div class="reverseUnoCard">
+  {{#each myInstances as |myInstance|}}
+      <li>
+        {{myInstance.name}}<p>{{myInstance.description}}</p>
+        <img src="{{myInstance.url}}">
+        <div>
+          <img id="icon" src="https://photos.smugmug.com/Hearticon/i-mSFVxPg/0/e0bfcea1/S/heart-icon-transparent-background-7-S.png" onclick="this.src=`https://photos.smugmug.com/Hearticon/i-ZC7QQ3V/0/42e0aad7/S/heart-icon-transparent-background-7red-S.png`">
+        </div>
+        <form action="/edit/{{ myInstance.id }}">
+            <input type="submit" value="Edit" />
+        </form>
+      </li>
+  {{/each}}
+</div>

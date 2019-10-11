@@ -6,8 +6,9 @@ header {
     justify-content: space-evenly;
     padding: 30px;
 }
-h1 {
-    margin: 0px;
+h1, h2 {
+    color: white;
+    margin: 5px;
     margin-right: 10px;
 }
 img {
@@ -19,7 +20,7 @@ img {
     width: 50%;
 }
 body {
-    background-color: gray;
+    background-color: rgb(61, 55, 55);
     color: black;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
@@ -39,8 +40,8 @@ body {
 }
 
 nav {
-    background-color: lightgray;
-    color: white;
+    background-color: gray;
+    color: black;
     display: flex;
 }
 
@@ -50,10 +51,17 @@ nav {
 .navigation:hover {
     background: rgb(145, 136, 145);
 }
-
+.whiteBackground {
+    background: white;
+    padding: 5px;
+}
+.reverseUnoCard {
+    display: flex;
+    flex-direction: column-reverse;   
+}
 p {
     margin: 5px;
-    font-size: 12px;
+    font-size: 17px;
     font-style: oblique;
 }
 
@@ -64,10 +72,11 @@ a:link, a:visited {
 
 li {
     list-style-type: none;
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: black;
 }
 
 #icon:hover, #icon:active {

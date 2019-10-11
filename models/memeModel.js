@@ -4,7 +4,6 @@ const memeSchema = new mongoose.Schema({
     name: String,
     url: String,
     description: String,
-    hearts: Number,
     topic: String
 });
 

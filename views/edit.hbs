@@ -1,3 +1,29 @@
-<form action="/{{myInstance.id}}?_method=delete" method="post">
-  <input type="submit" value="Remove">
-</form>
+<h2>Edit {{myInstances.name}}:</h2>
+
+<div class="whiteBackground">
+  <img src="{{myInstances.url}}">
+
+  <form action="/{{myInstance.id}}?_method=put" method="post">
+    <p>
+      <label>Change Name:</label>
+      <input type="text" value="{{ myInstances.name }}" name="name"/>
+    </p>
+    <p>
+      <label>Change URL: </label>
+      <input type="text" value="{{ myInstances.url }}" name="url"/>
+    </p>
+    <p>
+        <label>Change description: </label>
+        <input type="text" value="{{ myInstances.description }}" name="description"/>
+    </p>
+    <p>
+        <label>Change topic: </label>
+        <input type="text" value="{{ myInstances.topic }}" name="topic"/>
+    </p>
+    <input type="submit" value="Update" />
+  </form>
+
+  <form action="/{{myInstance.id}}?_method=delete" method="post">
+    <input type="submit" value="Delete">
+  </form>
+</div>
