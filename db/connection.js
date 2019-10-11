@@ -6,7 +6,7 @@ let mongoURI = "";
 if (process.env.NODE_ENV === "production") {
   mongoURI = process.env.DB_URL;
 } else {
-  mongoURI = "mongodb://localhost/Memes";
+  mongoURI = "mongodb://localhost/TheDailyMeme";
 }
 
 // connect to the database, with the imported mongoose instance
